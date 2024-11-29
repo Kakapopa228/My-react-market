@@ -100,8 +100,7 @@ function App() {
 				onAddToFavorites, 
 				onAddToCart, 
 				setOverlayOpen,
-				setCartSneakers,
-				cartSneakers
+				setCartSneakers
 				}}>
 				<div className="wrapper">
 					{overlayOpen ? <Overlay 
