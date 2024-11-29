@@ -33,7 +33,7 @@ function Header(props) {
 				</li>
 				<li onClick={() => navigate('/orders')}>
 					<img src="img/profile.svg" alt="Профиль" width={18} height={18}/>
-					<span>Профиль</span>
+					<span>Покупки</span>
 				</li>
 			</ul>
 		</div>

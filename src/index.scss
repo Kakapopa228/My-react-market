@@ -20,12 +20,19 @@ body {
 
 main {
 	padding: 50px;
-
+	display: block;
 	.headline {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
+		p {
+			img {
+				margin-right: 5px;
+			}
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+		}
 		.search-block {
 			border: 1px solid #F2F2F2;
 			border-radius: 10px;
@@ -50,5 +57,4 @@ main {
 		// 	margin-left: 20px;
 		// }
 	}
-
 }

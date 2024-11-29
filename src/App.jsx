@@ -112,9 +112,6 @@ function App() {
 					<Header
 						onClickCart={() => setOverlayOpen(true)}
 					/>
-
-					{/* <img width={930} height={300} src="img/baner.png" alt="Image 1"/> */}
-					
 					
 					<Routes>
 						<Route path='/' element={
@@ -130,14 +127,11 @@ function App() {
 
 						<Route path='/favorites' element={
 							<Favorites 
-								// items={favorites}
 								onAddToFavorites={onAddToFavorites}
 								onAddToCart={onAddToCart}
 						/>} exact/>
 						
-						<Route path='/orders' element={<Orders 
-							// orderSneakers={orderSneakers}
-						/>}exact/>
+						<Route path='/orders' element={<Orders/>}exact/>
 					</Routes>
 				</div>
 			</AppContext.Provider>

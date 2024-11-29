@@ -18,11 +18,13 @@
 		padding: 0 30px;
 		display: flex;
 		flex-direction: column;
-		
+		// justify-content: center;
+
 		.cartHead {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			// margin-bottom: 250px;
 
 			h4 {
 				font-size: 24px;
@@ -30,58 +32,6 @@
 
 			img {
 				cursor: pointer;
-			}
-		}
-
-		.emptyCart {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 250px;
-			flex: 1;
-			
-			b {
-				font-size: 22px;
-			}
-
-			span {
-				font-size: 16px;
-				opacity: 0.5;
-				text-align: center;
-				margin: 10px 0 40px 0;
-				width: 285px;
-				line-height: 24px;
-			}
-
-			.greenButton {
-				width: 100%;
-				height: 55px;
-				margin-bottom: 20px;
-				background-color: #9DD458;
-				border: none;
-				border-radius: 18px;
-				color: #FFFFFF;
-				font-size: 16px;
-				font-weight: 500;
-				cursor: pointer;
-			
-				// &:hover {
-				// 	background-color: lighten(#9DD458, 5%);
-				// }
-				position: relative;
-
-				&:hover {
-					img {
-						transform: translateX(-5px);
-					}
-				}
-
-				img {
-					position: absolute;
-					left: 30px;
-					top: 22px;
-					transition: transform 0.1s ease-in-out;
-				}
 			}
 		}
 
@@ -167,4 +117,69 @@
 			}
 		}
 	}
+}
+
+.emptyCart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	// margin-top: 250px;
+	flex: 1;
+
+	img {
+		height: 120px;
+	}
+	
+	b {
+		font-size: 22px;
+	}
+
+	span {
+		font-size: 16px;
+		opacity: 0.5;
+		text-align: center;
+		margin: 10px 0 40px 0;
+		width: 285px;
+		line-height: 24px;
+	}
+
+	.greenButton {
+		width: 100%;
+		height: 55px;
+		margin-bottom: 20px;
+		background-color: #9DD458;
+		border: none;
+		border-radius: 18px;
+		color: #FFFFFF;
+		font-size: 16px;
+		font-weight: 500;
+		cursor: pointer;
+	
+		// &:hover {
+		// 	background-color: lighten(#9DD458, 5%);
+		// }
+		position: relative;
+
+		&:hover {
+			img {
+				transform: translateX(-5px);
+			}
+		}
+
+		img {
+			height: 15px;
+			position: absolute;
+			left: 30px;
+			top: 22px;
+			transition: transform 0.1s ease-in-out;
+		}
+	}
+}
+
+
+.favoritesWrapper {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10% 30%;
 }

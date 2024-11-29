@@ -4,9 +4,8 @@ import React from 'react';
 import { AppContext } from '../../App';
 
 function Overlay({ onClose, onRemove, sneakers = [] }) {
-	const {cartSneakers, setCartSneakers} = React.useContext(AppContext);
+	const {cartSneakers, setCartSneakers, setOverlayOpen} = React.useContext(AppContext);
 	const [isOrderComplete, setIsOrderComplete] = React.useState(false);
-
 	const totalPrice = (cartSneakers.reduce((sum, obj) => Number(obj.price) + sum, 0)); //считаем общую сумму товаров в корзине
 
 	// читаем и обновляем список предыдущих покупок, добавляя новые значения из корзины
@@ -67,6 +66,7 @@ function Overlay({ onClose, onRemove, sneakers = [] }) {
 							title={isOrderComplete ? 'Заказ оформлен!' : 'Корзина пустая'} 
 							image={isOrderComplete ? 'img/ordered.png' : 'img/box.png'} 
 							description={isOrderComplete ? 'Ваш заказ скоро будет передан курьерской доставке' : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'}
+							setting={() => setOverlayOpen(false)}
 						/>
 					)
 				}
