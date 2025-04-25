@@ -1,5 +1,6 @@
 import Card from '../components/Card';
 import React from 'react';
+import Slider from '../components/Slider';
 
 
 function Home({
@@ -28,6 +29,7 @@ function Home({
 
 	return(
 		<main>
+			<Slider/>
 			<div className="headline">
 				<h1>Все кроссовки</h1>
 				<div className="search-block">

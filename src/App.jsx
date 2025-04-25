@@ -2,11 +2,11 @@ import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Header from './components/Header';
 import Overlay from './components/Overlay';
+import Slider from './components/Slider';
 import axios from 'axios';
 import Home from './pages/Home';
 import Favorites from './pages/Favorites';
-import Orders from './pages/Orders'
-
+import Orders from './pages/Orders';
 
 
 export const AppContext = React.createContext({});
@@ -111,6 +111,8 @@ function App() {
 					<Header
 						onClickCart={() => setOverlayOpen(true)}
 					/>
+
+					{/* <Slider/> */}
 					
 					<Routes>
 						<Route path='/' element={

@@ -52,6 +52,8 @@ main {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 44px; 
 		// justify-content: space-between;
 		// .card:nth-child(n + 2) {
 		// 	margin-left: 20px;
