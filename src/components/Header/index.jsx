@@ -14,7 +14,7 @@ function Header(props) {
 			<img src="img/logo.png" alt="logo" width={40} height={40}/>
 			{/* <img src="img/Yandex_icon.svg" alt="logo" width={45} height={45}/> */}
 			<div>
-				<h3>REACT SNEAKERS</h3>
+				<h3>REACT MARKET</h3>
 				<p>Магазин лучших кроссовок</p>
 			</div>
 		</div>

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-	"homepage": "https://Kakapopa228.github.io/My-react-sneakers",
+	"homepage": "https://Kakapopa228.github.io/My-react-market",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
